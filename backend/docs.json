@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Reset Password",
+    "content": "Users can reset their password by going to Settings > Security > Reset Password. Enter your registered email address and you will receive a password reset link within 5 minutes. The link expires after 30 minutes. If you do not receive the email, check your spam folder or contact support."
+  },
+  {
+    "title": "Account Deletion",
+    "content": "Users can delete their account permanently from Account Settings > Danger Zone > Delete Account. This action is irreversible. All your data, history, and preferences will be erased. You will receive a confirmation email before deletion is finalized. Account deletion takes up to 7 days to process."
+  },
+  {
+    "title": "Two-Factor Authentication",
+    "content": "Two-Factor Authentication (2FA) can be enabled from Settings > Security > Two-Factor Authentication. We support authenticator apps like Google Authenticator and Authy. You can also use SMS-based 2FA. It is strongly recommended to enable 2FA to protect your account."
+  },
+  {
+    "title": "Billing and Subscription",
+    "content": "You can view and manage your billing information from Account Settings > Billing. We accept Visa, Mastercard, American Express, and PayPal. Invoices are sent monthly to your registered email. To upgrade or downgrade your plan, go to Settings > Subscription. Refunds are available within 7 days of payment."
+  },
+  {
+    "title": "Changing Email Address",
+    "content": "To change your email address, go to Settings > Profile > Email. Enter your new email address and confirm it. A verification link will be sent to your new email. Your old email will also receive a notification. The change takes effect once you verify the new email."
+  },
+  {
+    "title": "Forgot Username",
+    "content": "If you forgot your username, go to the login page and click 'Forgot Username'. Enter your registered email address and your username will be sent to that email. If you no longer have access to that email, contact our support team for assistance."
+  },
+  {
+    "title": "Contact Support",
+    "content": "You can contact our support team via email at support@company.com or through the live chat available on our website Monday to Friday, 9am to 6pm IST. For urgent issues, call our helpline at +91-1800-000-0000. Average response time is 2-4 hours for email support."
+  },
+  {
+    "title": "Privacy and Data",
+    "content": "We take your privacy seriously. Your data is encrypted in transit using TLS and at rest using AES-256 encryption. We do not sell your personal data to third parties. You can download a copy of your data from Settings > Privacy > Download My Data. Read our full Privacy Policy at company.com/privacy."
+  },
+  {
+    "title": "Account Lock",
+    "content": "Your account may be locked after 5 consecutive failed login attempts as a security measure. To unlock your account, click 'Forgot Password' on the login page and follow the reset instructions. If the issue persists, contact our support team."
+  },
+  {
+    "title": "Notification Settings",
+    "content": "You can manage your notification preferences from Settings > Notifications. Choose to receive email notifications, push notifications, or SMS alerts. You can customize notifications for account activity, billing reminders, product updates, and promotional offers."
+  }
+]

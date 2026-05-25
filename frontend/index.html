@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">✦</div>
+        <span>HelpDesk<em>AI</em></span>
+      </div>
+      <div class="sidebar-label">Knowledge Base</div>
+      <ul class="topics">
+        <li onclick="sendQuickQ('How do I reset my password?')">🔑 Reset Password</li>
+        <li onclick="sendQuickQ('How do I enable two-factor authentication?')">🛡️ Two-Factor Auth</li>
+        <li onclick="sendQuickQ('How can I manage my billing?')">💳 Billing & Plans</li>
+        <li onclick="sendQuickQ('How do I change my email address?')">📧 Change Email</li>
+        <li onclick="sendQuickQ('How do I delete my account?')">🗑️ Account Deletion</li>
+        <li onclick="sendQuickQ('How do I manage notifications?')">🔔 Notifications</li>
+        <li onclick="sendQuickQ('How do I contact support?')">💬 Contact Support</li>
+        <li onclick="sendQuickQ('How is my data protected?')">🔒 Privacy & Data</li>
+      </ul>
+      <div class="sidebar-footer">
+        <button class="new-chat-btn" onclick="startNewSession()">+ New Chat</button>
+      </div>
+    </aside>
+    <main class="chat-area">
+      <header class="chat-header">
+        <div class="header-left">
+          <div class="status-dot"></div>
+          <span>Support Assistant</span>
+        </div>
+        <div class="header-right">
+          <span class="model-tag">Gemini · RAG</span>
+        </div>
+      </header>
+      <div class="messages" id="messages">
+        <div class="welcome">
+          <div class="welcome-icon">✦</div>
+          <h2>How can I help you today?</h2>
+          <p>Ask me anything about your account, billing, security, or settings.</p>
+        </div>
+      </div>
+      <div class="input-row">
+        <div class="input-wrap">
+          <textarea
+            id="userInput"
+            placeholder="Ask a question..."
+            rows="1"
+            onkeydown="handleKey(event)"
+            oninput="autoResize(this)"
+          ></textarea>
+          <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+        <div class="input-hint">Press <kbd>Enter</kbd> to send · <kbd>Shift+Enter</kbd> for newline</div>
+      </div>
+    </main>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
