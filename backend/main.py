@@ -6,8 +6,8 @@ from pydantic import BaseModel
 import uuid
 import os
 
-from storage import load_and_index_documents
-from rag import rag_pipeline
+from backend.storage import load_and_index_documents
+from backend.rag import rag_pipeline
 
 app = FastAPI(title="GenAI RAG Assistant")
 
