@@ -1,5 +1,5 @@
-from retrieval import retrieve_relevant_chunks
-from llm import call_llm
+from backend.retrieval import retrieve_relevant_chunks
+from backend.llm import call_llm
 
 
 def build_prompt(context: str, history: list[dict], question: str) -> str:
