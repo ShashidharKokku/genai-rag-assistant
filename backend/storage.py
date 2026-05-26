@@ -1,6 +1,6 @@
 import json
 import os
-from embeddings import generate_embeddings_batch
+from backend.embeddings import generate_embeddings_batch
 
 CHUNK_SIZE = 400  # characters per chunk
 DOCS_PATH = os.path.join(os.path.dirname(__file__), "docs.json")
