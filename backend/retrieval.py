@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-from embeddings import generate_embedding
-from storage import get_vector_store
+from backend.embeddings import generate_embedding
+from backend.storage import get_vector_store
 
 SIMILARITY_THRESHOLD = 0.35
 TOP_K = 3
